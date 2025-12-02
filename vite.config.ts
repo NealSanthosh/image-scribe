@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: ["image-scribe.onrender.com"],
     proxy: {
       '/image-scribe': {
         target: 'https://image-scribe.onrender.com',
